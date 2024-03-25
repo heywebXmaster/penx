@@ -25,7 +25,7 @@ interface Props {
 }
 export const CodeBlockProvider = (props: Props) => {
   const { Provider } = codeBlockContext
-  const [status, setStatus] = useState(CodeBlockStatus.NORMAL)
+  const [status, setStatus] = useState<CodeBlockStatus>(CodeBlockStatus.NORMAL)
 
   return <Provider value={{ status, setStatus }}>{props.children}</Provider>
 }

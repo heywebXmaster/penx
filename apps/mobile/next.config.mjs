@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export',
   swcMinify: true,
   transpilePackages: [
@@ -62,3 +63,5 @@ module.exports = {
     '@penx/slate-lists',
   ],
 };
+
+export default nextConfig;
